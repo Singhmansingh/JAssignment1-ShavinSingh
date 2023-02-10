@@ -1,0 +1,45 @@
+extends layout 
+block append styles 
+    link(rel="stylesheet", href="rooms.css")
+
+
+block main-content
+    main.room-list.wrapper.spaced
+        each room in rooms 
+            //- div(style="background-image:url("+room.img+")").room-container.shadow
+            div(style='background-image: url("assets/img/'+room.img+'")').room-container.shadow
+                div.room
+                    img(src='assets/img/' + room.img, alt=room.name, height="300").room__img
+
+                    //- img(src=room.img).room__img
+                    div.room__content.shadow 
+                        div.room__content_header
+                            h2.room__content_title #{room.name}
+
+                        div.room__content_difficulty
+                            span.info__difficulty Difficulty: 
+                            - var x = 0;
+                            while x < 5
+                                if x < room.difficulty
+                                    span.star.f &starf;
+                                else 
+                                    span.star &star;
+                                - x++;
+
+                            
+
+                        div.room__content_tags
+                            div.info__players 
+                                i.fa-solid.fa-user-group
+                                span #{room.playerMin} - #{room.playerMax} players
+                            for tag in room.tags 
+                                span.tags__tag 
+                                    i(class=icons[tag])
+                                    p #{tag}
+                        p.room__content_description #{room.desc}
+                        div.room__content_footer
+                            a(href="#").btn-cta Book Now
+                            div
+                                p(class=[room.salePrice ? "strikethrough" : null,"room__content_price"]) $#{room.ticketPrice}.00
+                                if room.salePrice
+                                    p.room__content_price $#{room.salePrice}.00

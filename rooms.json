@@ -1,0 +1,96 @@
+[{
+  "_id": {
+    "$oid": "63de79f95a0b3194cc9e67bf"
+  },
+  "name": "Escape the Horde",
+  "desc": "The city of Seattle, Washington has issued an emergency broadcast. An epidemic of uncontrolled canabalistic psychosis has broken out and is ravaging the streets. The government requests that all residents head for the highway. You hear the sounds outside. Find another way out.",
+  "playerMin": 3,
+  "playerMax": 6,
+  "ticketPrice": 35,
+  "difficulty": 3,
+  "img": "Day 0.png",
+  "tags": [
+    "horror",
+    "survival",
+    "scary"
+  ]
+},{
+  "_id": {
+    "$oid": "63de79f95a0b3194cc9e67c0"
+  },
+  "name": "Pharoh's Revenge",
+  "desc": "An excavation gone wrong. Sandow, the new intern, has triggered a trap room in the Pyramid, dividing you from your group. You must find a way out before you succumb to the Pharoh's Curse!",
+  "playerMin": 4,
+  "playerMax": 8,
+  "ticketPrice": 25,
+  "salePrice": 20,
+  "difficulty": 5,
+  "img": "Pharoh's Revenge.webp",
+  "tags": [
+    "mystery",
+    "survival"
+  ]
+},{
+  "_id": {
+    "$oid": "63de79f95a0b3194cc9e67c1"
+  },
+  "name": "Cops & Robbers",
+  "desc": "The group known as the Silvered Gang is up to no good. They are planning a devious heist! Work as a crew of cops to catch the gang! Or, take a turn for the silver and join the gang in this PvP adventure!",
+  "playerMin": 6,
+  "playerMax": 10,
+  "ticketPrice": 23,
+  "salePrice": 20,
+  "difficulty": 3,
+  "img": "Cops_and_Robbers.jpg",
+  "tags": [
+    "competitive"
+  ]
+},{
+  "_id": {
+    "$oid": "63de79f95a0b3194cc9e67c2"
+  },
+  "name": "Late for Wizards class!",
+  "desc": "Alchemy class was crazy today! But, all good things come to an end. Wait, where's my wand?! It must have gotten mixed up in the experiments! Use your knowledge of magic to retrace your steps, before the bell rings!",
+  "addDesc": "Use your knowlege of Alchemy to find your wand and get to class!",
+  "playerMin": 3,
+  "playerMax": 6,
+  "ticketPrice": 35,
+  "difficulty": 2,
+  "img": "Alchemy Lab.jpg",
+  "tags": [
+    "goofy",
+    "magic",
+    "science"
+  ]
+},{
+  "_id": {
+    "$oid": "63de79f95a0b3194cc9e67c3"
+  },
+  "name": "The Backrooms",
+  "desc": "You have found yourself in an odd space. An old gramophone plays music of a time gone past. A seemingly endless liminal labarenth surrounds you. How did you get here?",
+  "playerMin": 1,
+  "playerMax": 4,
+  "ticketPrice": 25,
+  "difficulty": 5,
+  "img": "Backrooms.webp",
+  "tags": [
+    "scary"
+  ]
+},{
+  "_id": {
+    "$oid": "63de79f95a0b3194cc9e67c4"
+  },
+  "name": "Inventor's Study",
+  "desc": "The Inventor has invited you to tour his clocktower. The wonder and amazement has lead to to find his study. While tinkering, you accidentally activate an experimental machine and the door is locked! One of these devices has to open the door, right!?",
+  "playerMin": 4,
+  "playerMax": 8,
+  "ticketPrice": 35,
+  "salePrice": 30,
+  "img": "Inventors Study.png",
+  "tags": [
+    "goofy",
+    "steampunk",
+    "science"
+  ],
+  "difficulty": "4"
+}]

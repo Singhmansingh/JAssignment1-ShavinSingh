@@ -1,0 +1,87 @@
+section {
+    text-align: center;
+    margin: 1em 0;
+}
+
+#about {
+    background-color: rgba(0, 0, 0, 0.226);
+}
+
+.mosaic {
+    display: grid;
+    grid-template-areas:
+        "i1 i1 i2"
+        "i3 i3 i2"
+        "i4 i5 i5"
+    ;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 300px;
+    gap: 15px;
+}
+
+@media screen and (max-width: 720px) {
+    .mosaic {
+        grid-template-areas:
+        "i1 i2"
+        "i3 i4"
+        "i5 i5"
+    ;
+    grid-template-columns: repeat(2,1fr);
+
+    }
+}
+
+.mosaic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mosaic img:nth-child(1){
+    grid-area: i1;
+}
+
+
+.mosaic img:nth-child(2){
+    grid-area: i2;
+}
+
+.mosaic img:nth-child(3){
+    grid-area: i3;
+}
+
+.mosaic img:nth-child(4){
+    grid-area: i4;
+}
+.mosaic img:nth-child(5){
+    grid-area: i5;
+}
+
+#testimonials {
+    background-color: rgba(0, 0, 0, 0.808);
+    color: white;
+    background-image: url(./assets/img/Day\ 0.png);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+  
+
+.feature {
+    font-size: 3em;
+    font-style: italic;
+    margin: 0;
+}
+.feature::before, .feature::after{
+    content: '"';
+}
+
+#contact {
+    color: white;
+    position: relative;
+    background: linear-gradient(#ffffff00,rgb(15, 16, 20) 90%);
+
+}

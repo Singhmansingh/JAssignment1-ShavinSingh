@@ -1,0 +1,136 @@
+.room-list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1080px) {
+    .room-list {
+        grid-template-columns: repeat(1,min-content);
+        
+    }
+}
+
+.room {
+    padding: 30px;
+    display: grid;
+    grid-template-rows: 300px 1fr;
+    row-gap: 20px;
+    height: 100%;
+    width: 100%;
+
+}
+
+.room-container {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-blend-mode:overlay;
+    background-color: rgb(26, 26, 26);
+    margin: 10px 0;
+
+}
+
+
+.room__content {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gunmetal);
+    gap: 1.4em;
+
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.room__content_header {
+    display: inline-flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.room__content_title {
+    display: inline;
+}
+
+.room__content_price {
+    display: inline;
+    margin-right: 0.4em;
+    font-size: 1.2em;
+}
+
+.strikethrough {
+    text-decoration: line-through currentColor 2px;
+    color: var(--tertiary);
+    font-size: 1em;
+}
+
+.room__content_difficulty {
+    font-size: 1.1em;
+}
+
+
+.star {
+    color: white;
+    font-size: 1.2em;
+}
+.star.f {
+    color: var(--primary);
+}
+
+
+
+
+
+
+
+
+
+
+.room__content_tags {
+    display: inline-flex;
+    text-align: center;
+    gap: 10px;
+}
+
+.info__players {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    align-items: center;
+    background-color: rgba(63, 163, 76, 0.692);
+    border-radius: 10px;
+    color: white;
+    padding: 0 10px;
+}
+
+
+
+.tags__tag {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background-color: rgba(119, 136, 153, 0.507);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.room__img {
+    flex-shrink: 1;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+.room__content_title {
+    margin: 0;
+}
+
+.room__content_footer {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}

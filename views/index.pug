@@ -1,0 +1,25 @@
+extends layout 
+block append styles 
+    link(rel="stylesheet", href="home.css")
+block append header 
+    a(href="/rooms").btn-cta Browse Rooms 
+    
+block main-content
+    main 
+        section#about.banner 
+            h2 Escape the Odds 
+            p Work together to solve puzzles, discover secrets and try to escape!
+        section#gallery.spaced
+            h2 Browse the Gallery
+            - var x = 0;
+            .mosaic.wrapper
+                while x < 5
+                    img(src=`assets/img/${rooms[x].img}`,width=250,alt=rooms[x].name)
+                    - x++;
+        section#testimonials.banner
+            h2 Hear what People are Saying
+            p.feature.wrapper We got out in the nick of time!
+        section#contact.banner
+            h2 Choose your Room 
+            a(href="/rooms").btn-cta Browse Rooms 
+

@@ -1,0 +1,21 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        script(src="https://kit.fontawesome.com/9010bf8828.js", crossorigin="anonymous") 
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Cobra Escape Rooms | #{title}
+        block styles
+            link(rel="stylesheet", href="style.css")
+    body
+        include navbar.pug
+        .hero-heading.shadow
+            block header
+                img(src="assets/img/logo.png", alt="Logo of a green cobra coiled into a circle").logo
+                h1 #{title}
+                p #{subtitle}
+
+        block main-content
+        footer.shadow.headerfooter
+            p &copy; Copyright Shavin Singh, 2023
